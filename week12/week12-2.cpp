@@ -1,16 +1,15 @@
-//week12-2.cpp SOIT106_ADVANCE_008_C
-#include <stdio.h>
+// week12-2.cpp SOIT106_ADVANCE_01
+#include <iostream>
+using namespace std;
 
-int f(int n)
+int main()
 {
-    if (n<0)return -n;
-    return n;
-}
-
-int main(void)
-{
-	int n;
-	scanf("%d",&n);
-	printf("[%d]",f(n));
-	return 0;
+    char a,b,c,d;
+    cin >> a >> b >> c >> d;
+    int ans = 0;
+    if (a=='1') ans += 8;
+    if (b=='1') ans += 4;
+    if (c=='1') ans += 2;
+    if (d=='1') ans += 1;
+    cout << ans << "\n";
 }
